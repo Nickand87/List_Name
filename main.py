@@ -57,7 +57,7 @@ def rename_set(s_path, o_path, r_path):
             txt_file.write("".join(line) + "\n")
 
     print(output_file_name)
-    rename_files(r_path, o_path, output_file_name)
+    rename_files(r_path, output_file_name)
 
 
 def create_file_names(s_path):
@@ -186,7 +186,7 @@ def quick_rename(r_path):
         os.rename(r_path + old_file_names[file], r_path + number + ".txt")
 
 
-def rename_files(r_path, o_path, f_name):
+def rename_files(r_path, f_name):
 
     old_file_names = os.listdir(r_path)
     compiled_lines = []
